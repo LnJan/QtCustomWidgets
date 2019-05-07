@@ -7,13 +7,13 @@
 ## 效果展示
 ### QFlowProgressBar
 流程进度的进度条目前有四种样式可选。进度条的颜色可自定义，效果如下：<br>
-![流程进度条gif]()
+![流程进度条gif](https://github.com/LnJan/QtCustomWidgets/blob/master/ScreenShorts/FlowProgress.gif)
 ### QPictureSlides
-图片导航栏，可自动切换图片和手动切换图片
-![图片导航栏gif]()
+图片导航栏，可自动切换图片和手动切换图片<br>
+![图片导航栏gif](https://github.com/LnJan/QtCustomWidgets/blob/master/ScreenShorts/Sildes.gif)
 ### QToast
-类似Android中的Toast功能
-![QToast]()
+类似Android中的Toast功能<br>
+![QToast](https://github.com/LnJan/QtCustomWidgets/blob/master/ScreenShorts/Toast.gif)
 ### QCardDialog
-卡片样式的悬浮对话框
-![QCardDialog]()
+卡片样式的悬浮对话框<br>
+![QCardDialog](https://github.com/LnJan/QtCustomWidgets/blob/master/ScreenShorts/QCard.gif)
