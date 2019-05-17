@@ -46,9 +46,13 @@ void QPictureSlides::paintEvent(QPaintEvent*)
                         pixmap=pixmap.scaled(nWidgetW,nWidgetH,Qt::KeepAspectRatio);
                         drawPicSize=pixmap.size();
                     }
+                    QTransform transForm;
+                    transForm.rotate(-45,Qt::Axis::YAxis);
+                    painter.setTransform(transForm);
                     int nStartX=qMax((nWidgetW-drawPicSize.width())/2,0);
                     int nStartY=qMax((nWidgetH-drawPicSize.height())/2,0);
                     painter.drawPixmap(nStartX,nStartY,pixmap);
+                    painter.resetTransform();
                 }
             }
             else if(pCurrenObj->metaObject()->className()==QStringLiteral("QMovie"))

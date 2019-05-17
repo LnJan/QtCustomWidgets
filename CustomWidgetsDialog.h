@@ -26,6 +26,10 @@ private slots:
 
     void on_pushButton_card_clicked();
 
+    void on_pushButton_nextStep_clicked();
+
+    void on_pushButton_prev_clicked();
+
 private:
     Ui::CustomWidgetsDialog *ui;
 

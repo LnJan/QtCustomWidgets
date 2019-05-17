@@ -59,6 +59,15 @@ void CustomWidgetsDialog::InitUi()
     ui->comboBox_time->setCurrentIndex(0);
 
     ui->textEdit_toast->setText("测试显示");
+
+    QStringList galleryList;
+    galleryList<<QCoreApplication::applicationDirPath()+"\\gallery\\1.jpg";
+    galleryList<<QCoreApplication::applicationDirPath()+"\\gallery\\2.jpg";
+    galleryList<<QCoreApplication::applicationDirPath()+"\\gallery\\3.jpeg";
+    galleryList<<QCoreApplication::applicationDirPath()+"\\gallery\\4.jpg";
+    galleryList<<QCoreApplication::applicationDirPath()+"\\gallery\\5.jpg";
+
+    ui->gallery_main->InitImageList(galleryList);
 }
 
 void CustomWidgetsDialog::on_btn_next_clicked()
@@ -126,4 +135,14 @@ void CustomWidgetsDialog::on_pushButton_card_clicked()
 {
     QCardDialog tmpCardDialog;
     tmpCardDialog.exec();
+}
+
+void CustomWidgetsDialog::on_pushButton_nextStep_clicked()
+{
+    ui->gallery_main->MoveStep(0);
+}
+
+void CustomWidgetsDialog::on_pushButton_prev_clicked()
+{
+    ui->gallery_main->MoveStep(1);
 }

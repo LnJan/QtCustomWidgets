@@ -29,7 +29,7 @@
     <enum>QTabWidget::Triangular</enum>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="tab_1">
     <attribute name="title">
@@ -297,6 +297,47 @@
      </widget>
     </widget>
    </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Gallery</string>
+    </attribute>
+    <widget class="QGallery" name="gallery_main" native="true">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>70</y>
+       <width>1111</width>
+       <height>541</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_nextStep">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>630</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_prev">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>630</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Prev</string>
+     </property>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
@@ -315,6 +356,12 @@
    <class>QPictureSlides</class>
    <extends>QLabel</extends>
    <header>CustomWidgets\QPictureSlides.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QGallery</class>
+   <extends>QWidget</extends>
+   <header>CustomWidgets\QGallery.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

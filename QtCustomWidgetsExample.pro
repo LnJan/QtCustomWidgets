@@ -33,7 +33,10 @@ SOURCES += \
     CustomWidgets/qpictureslides.cpp \
     CustomWidgets/qpixmapobject.cpp \
     CustomWidgets/QCardDialog.cpp \
-    CustomWidgets/QToast.cpp
+    CustomWidgets/QToast.cpp \
+    CustomWidgets/QGalleryCard.cpp \
+    CustomWidgets/QGallery.cpp \
+    CustomWidgets/QGalleryCardManager.cpp
 
 HEADERS += \
         CustomWidgetsDialog.h \
@@ -43,7 +46,10 @@ HEADERS += \
     CustomWidgets/qpictureslides.h \
     CustomWidgets/qpixmapobject.h \
     CustomWidgets/QCardDialog.h \
-    CustomWidgets/QToast.h
+    CustomWidgets/QToast.h \
+    CustomWidgets/QGalleryCard.h \
+    CustomWidgets/QGallery.h \
+    CustomWidgets/QGalleryCardManager.h
 
 FORMS += \
         CustomWidgetsDialog.ui
